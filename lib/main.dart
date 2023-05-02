@@ -1,23 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:mr_mrs_wear/pages/HomePage.dart';
+import 'package:mr_mrs_wear/pages/splash.dart';
 
-
-
-void main()=>runApp(MyApp());
+void main() {
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget{
+  const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context){
-    return MaterialApp(
+  Widget build(BuildContext context) {
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        scaffoldBackgroundColor: Colors.white,
-      ),
-      routes: {
-        "/":(context) => HomePage()
-      },
+      home: SplashScreen(),
     );
-
   }
+
 }
